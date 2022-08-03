@@ -6,7 +6,16 @@ body {
 
 * {
     font-family: Arial, sans-serif;
+    font-size: large;
     box-sizing: border-box;
+}
+
+.nav-item {
+    font-size: x-large;
+    cursor: pointer;
+}
+.nav-item:hover {
+    color: #dfa966;
 }
 
 .page {
@@ -31,10 +40,15 @@ body {
 }
 .col {
     display: inline-block;
+    padding: 1em;
 }
 .c24 {
     width: 24%;
 }
 .c74 {
     width: 74%;
+}
+
+.pub {
+    margin: 40px;
 }

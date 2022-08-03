@@ -4,7 +4,8 @@
     align-items: left;
     justify-content: space-between;
     background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    background: linear-gradient(to bottom, #0a3b7f, #227dbb);
+    
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
     height: 100%;
@@ -21,7 +22,7 @@
 }
 
 .menu>li {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
     overflow: hidden;
 }
 
