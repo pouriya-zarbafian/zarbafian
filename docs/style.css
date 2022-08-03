@@ -1,0 +1,12 @@
+body {
+    background-color: #072b60;
+}
+
+.display {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffe8be;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 300px);
+}
