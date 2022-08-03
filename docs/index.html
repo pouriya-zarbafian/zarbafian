@@ -7,28 +7,44 @@
     <!--
     -->
     <link href="style.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
     <script src="main.js"></script>
     <title>zarbafian.com</title>
 </head>
 
 <body onload="init()">
 
-    <section class="top-nav">
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
-            <li>Five</li>
-        </ul>
-    </section>
+    <div class="page">
+        
+        <div class="nav">
+            <section class="top-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Publications</li>
+                    <li>R&eacute;sum&eacute;</li>
+                    <li>Projects</li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="content">
+            <div class="row">
+                <div class="col c25">
+                    <img src="img/pz.jpg" width="200px" height="200px"/>
+                </div>
+                <div class="col c75">
+                    <h3>Pouriya Zarbafian</h3>
+                    PhD Candidate, School of Computer Science, University of Sydney
+                </div>
+            </div>
+        </div>
 
-    <h2>Resize window to collapse menu</h2>
-
+    </div>
+        
 </body>
 
 </html>
