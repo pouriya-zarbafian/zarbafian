@@ -9,14 +9,82 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="style.css" rel="stylesheet">
     <link href="nav.css" rel="stylesheet">
+    <link href="gossip.css" rel="stylesheet">
+
+    <script src="common.js"></script>
+    <script src="rand.js"></script>
+    <script src="animation.js"></script>
+    <script src="dns.js"></script>
+    <script src="svg.js"></script>
+    <script src="peer.js"></script>
+    <script src="process.js"></script>
+    <script src="sampling.js"></script>
+    <script src="link.js"></script>
+    <script src="bus.js"></script>
+    <script src="network.js"></script>
+    <script src="storage.js"></script>
+    <script src="sim.js"></script>
+
     <script src="main.js"></script>
-    <title>zarbafian.com</title>
+    <title>Pouriya</title>
 </head>
 
 <body onload="init()">
 
+    <!-- Project modal window -->
+    <div id="modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="close_modal()">Close&nbsp;&times;</span>
+
+            <!-- simulation display -->
+            <div id="display" class="display">
+
+            </div>
+
+            <!-- simulation settings -->
+            <div class="settings">
+                <b>Peer settings</b>
+                <br />
+                <input id="initialProcesses" type="text">Initial count<br />
+                <input id="joiningProcesses" type="text">Increment rate<br />
+
+                <b>Display settings</b>
+                <br />
+                <input id="displayLinks" type="checkbox">Display links<br />
+                <input id="displayMessages" type="checkbox">Display messages<br />
+                <br />
+                <span id="speedLabel" style="vertical-align: middle;">10</span>
+                <input id="simulationSpeed" type="range" min="1" max="100" value="60"
+                    style="vertical-align: top;">Speed<br />
+                <br />
+                <b>Sampling parameters</b>
+                <br />
+                <input id="spPush" type="checkbox">Push<br />
+                <input id="spPull" type="checkbox">Pull<br />
+                <input id="spt" type="text">T<br />
+                <input id="spc" type="text">c<br />
+                <input id="sph" type="text">H<br />
+                <input id="sps" type="text">S<br />
+                <br />
+                <button id="startStopButton" value="START" onclick="startStop()">START</button>
+                &nbsp;
+                <button id="sendDataButton" value="DATA" onclick="testStartData()">DATA</button>
+                <br />
+
+                <p><b>Help:</b><br />
+                    START button to create and update the links between nodes.<br />
+                    DATA button for a random process to start disseminating a piece of data (up to 8 pieces of
+                    data/sectors can be disseminated).<br />
+                    Reload page after resizing the window.</p>
+            </div>
+        </div>
+
+    </div>
+
     <div class="page">
-        
+
         <div class="nav">
             <section class="top-nav">
                 <input id="menu-toggle" type="checkbox" />
@@ -31,13 +99,13 @@
                 </ul>
             </section>
         </div>
-        
+
         <div id="content" class="content">
 
         </div>
 
     </div>
-        
+
 </body>
 
 </html>

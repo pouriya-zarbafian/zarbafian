@@ -2,11 +2,12 @@ html,
 body {
     margin: 0;
     height: 100%;
+    font-size: large;
+    display: flex;
 }
 
 * {
     font-family: Arial, sans-serif;
-    font-size: large;
     box-sizing: border-box;
 }
 
@@ -47,6 +48,10 @@ body {
 }
 .c74 {
     width: 74%;
+}
+
+.title {
+ font-size: x-large;
 }
 
 .pub {
