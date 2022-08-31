@@ -109,6 +109,8 @@ function goto(section) {
         .then((resp) => resp.text())
         .then((html) => {
         content.innerHTML = html;
+        let menuToggleElem = document.getElementById('menu-toggle');
+        menuToggleElem.checked = false;
     });
 }
 function openInTab(url) {

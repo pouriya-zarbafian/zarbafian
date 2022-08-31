@@ -137,7 +137,11 @@ function goto(section: string) {
     fetch(req)
         .then((resp) => resp.text())
         .then((html) => {
+            // Load page
             content.innerHTML = html;
+            // Close menu
+            let menuToggleElem = document.getElementById('menu-toggle') as HTMLInputElement;
+            menuToggleElem.checked = false;
         });
 }
 
